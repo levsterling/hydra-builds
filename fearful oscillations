@@ -1,5 +1,5 @@
 osc(30,.15,2).mult(shape(7)).out(o1)
 src(o0).scale(1.01).rotate(0.001)
-.blend(o1,0.01).saturate(1). shift( 3, () => Math.random(time) * 5).modulateScrollY(noise(()=>Math.random(time)*2),0)
+.blend(o1,0.01).saturate(1). shift( 3, () => Math.random(time) * 5).modulateScrollY(noise(2),0)
   .out()
 
