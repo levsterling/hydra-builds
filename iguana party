@@ -1,0 +1,6 @@
+s0.initImage("https://static.vecteezy.com/system/resources/previews/005/162/476/original/cartoon-iguana-isolated-on-white-background-free-vector.jpg")
+osc(30,0.2,3).modulate(osc(10,({time}) => Math.sin(time) * 0.0002).modulate(s0),0.1)
+.modulate(s0,2,0.2)
+.colorama([0.005,0.33,0.66,1.0].fast(99))
+
+.out(o0)
